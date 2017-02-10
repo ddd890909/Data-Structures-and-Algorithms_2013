@@ -1,0 +1,6 @@
+main.c
+這是一個構建binary search tree的程式，并完成在其中找到最接近的數。
+先輸入操作的步數，然後可以進行insert、delete和query操作。
+query操作即找出set中與輸入的數最接近的數，如果有不止一個，則按從小到大輸出。
+
+獨立完成。

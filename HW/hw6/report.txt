@@ -1,0 +1,8 @@
+main.c
+這是一個求一個字串的兩段任意suffix最大相同prefix（LCP）長度的程式。字串長度最大設為200000。字串全部由小寫字母組成。
+Hash Value用Rabin-Karp的方法。為了防止數太大會進行取modulo。
+對字串預處理求出所有prefix的hash值，花費O（n）。之後每次判斷兩段suffix的prefix是否相同就只需要O(1)。
+尋找最長的相同prefix的過程用二分的方法，如果相同就找後面的一半位置是否還相同，如果不同就找前面的一半位置是否還不同。這樣就只需要O（lg n）的時間來找到LCP。
+
+reference：
+http://wenku.it168.com,上課投影片,與學長討論

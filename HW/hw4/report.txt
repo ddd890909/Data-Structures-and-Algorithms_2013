@@ -1,0 +1,9 @@
+main.c
+這是一個用Dijkstra算法來求a點經過1點然後到達b點的最短路徑的程式。
+Graph用adjacency list來構建。vertex數量最大設為400000，edge數最大設為600000。adjListInsert函式完成往adjacency list中insert。
+Dijkstra算法用min heap來優化。heapInsert函式完成往heap中insert，heapPop函式完成取出heap中的最小node。
+其中a點經過1點然後到達b點的最短路徑分解為a點到1點的最短路徑加上1點到b點的最短路徑。其中求a點到1點的最短路徑時將edge的方向反過來構建adjacency list進行一次Dijkstra算法。
+之後將所有點到1點的最短距離和1點到所有點的最短距離記錄下來，無法到達測為-1。每次query就只需要O（1）的時間。
+
+
+reference：http://wenku.it168.com/d_000588311.shtml,上課投影片

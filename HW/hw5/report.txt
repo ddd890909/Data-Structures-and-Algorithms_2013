@@ -1,0 +1,10 @@
+main.c
+這是一個用Kruskal算法來求MST的程式。vertex數量最大設為100000。
+對每個island構建一個Graph，構建時先對vertex按x和y大小分別排序，之後再對每個點看他相鄰的點是不是在同一行或同一列，是的話就可以得到一條路徑edge，因為MST中的edge一定是連接兩個相鄰點的，所以找出這些edge就可以。
+之後用Kruskal算法來構建MST。先對edge按weight排序,然後按從小到大的順序把vertex放到MST中，如果edge的兩個點都在同個MST中的話就捨?。把選出的邊的weight加總起來。
+時間複雜度很大程度上取決於sort的花費。
+判斷兩個vertex是不是屬於同個set的時候用path compression方法進行壓縮。當數據很多的時候用recursion的方式會導致stack overflow，所以自己寫了stack來判斷兩個vertex是不是屬於同個set。
+最後判斷整個Graph是不是只有一個MST，不是的話說明沒有辦法把所有city都連通起來，輸出-1。
+
+reference：
+http://wenku.it168.com,上課投影片,與學長討論

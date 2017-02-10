@@ -1,0 +1,7 @@
+main.c
+這是一個構建unrolled linked list的程式。
+分成很多block，每個block中有很多node。
+輸入操作步數，并輸入insert或query操作，則輸出query的結果。
+
+
+參考CSDN論壇，并與符劼討論。

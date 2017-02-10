@@ -1,0 +1,28 @@
+//This file is using UTF8 encoding and Unix newid character.
+//If you're Windows users, PLZ use text editor (ex. notepad++.etc.) to open it.
+
+/***************/
+/* Test Result */
+/***************/
+
+Use 'make' command to compile ... Success.
+Try to find the executable file 'main' or 'main.exe' ... Success.
+
+Test data #1: Wrong Answer.
+Test data #2: Wrong Answer.
+Test data #3: Wrong Answer.
+Test data #4: Wrong Answer.
+Test data #5: Wrong Answer.
+
+=============
+
+1. Please delete any debug messages and "Please input..." messages before submitting your code.
+2. in determinant3, you don't initialize "det". 
+3. Score:
+Make  --  5/ 5 points.
+Test  --  6/15 points.
+Report-- 10/10 points.
+======================
+Total -- 21/30 points.
+
+

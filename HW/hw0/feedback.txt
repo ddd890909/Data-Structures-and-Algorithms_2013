@@ -1,0 +1,3 @@
+Your program has passed the sample test only.
+While you are using Gaussian Elimination, you stored the fractional numbers in double type.
+It may result in deviation between your output and the correct answer.
